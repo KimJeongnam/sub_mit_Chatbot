@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lecture_classtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1교시"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/lecture_empimage"
+            android:padding="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:id="@+id/lecture_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="13dp"
+            android:layout_toRightOf="@+id/lecture_empimage"
+            android:text="중국어 기초"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/lecture_classroom"
+            android:layout_width="100dp"
+            android:paddingRight="13dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="중국어 기초"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

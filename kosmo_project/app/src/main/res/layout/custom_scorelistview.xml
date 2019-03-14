@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/score_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:textColor="#000000"
+            android:text="2018년도"/>
+
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:id="@+id/score_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1학년"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/score_semester"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:textColor="#000000"
+            android:text="2학기"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/score_avgscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+
+            android:text="평균 학점 : 4.24"
+            android:textSize="13dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/bg_gradient_start"
+            />
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:id="@+id/score_leccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/score_avgscore"
+            android:text="강의수 : 5"
+            android:textSize="13dp"
+            />
+
+        <TextView
+            android:id="@+id/score_passscore"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="이수 학점 : 6"
+            android:textSize="13dp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
